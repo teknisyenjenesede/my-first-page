@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page de Bienvenue Animée</title>
+    <title>Page de Connexion Animée</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,10 +16,22 @@
         </div>
     </div>
 
+    <!-- Formulaire de Connexion -->
+    <div id="login-container" style="display: none;">
+        <h2>Connexion</h2>
+        <form onsubmit="handleLogin(event)">
+            <label for="username">Nom d'utilisateur :</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Mot de passe :</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Se connecter</button>
+        </form>
+    </div>
+
     <!-- Contenu Principal de la Page -->
     <div id="main-content" style="display: none;">
         <h2>Bienvenue sur la page principale</h2>
-        <p>Ceci est le contenu principal de votre site web. La page flottante a disparu.</p>
+        <p>Vous êtes maintenant connecté(e).</p>
     </div>
 
     <script src="script.js"></script>
