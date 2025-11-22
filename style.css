@@ -1,56 +1,40 @@
-body {
-    margin: 0;
-    font-family: sans-serif;
-    background-color: #f0f0f0;
-}
+/* ... Conservez tous les styles précédents pour body, #splash-screen, .logo-animation, etc. ... */
 
-/* Styles de la page flottante */
-#splash-screen {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #fff; /* Couleur de fond de la page flottante */
+/* Styles pour le conteneur de connexion */
+#login-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: 100;
+    height: 100vh;
+    background-color: #f0f0f0;
+    padding: 20px;
 }
 
-.splash-content {
-    text-align: center;
+#login-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-.logo-animation {
-    width: 150px; /* Taille de votre logo */
-    height: auto;
-    /* Animation de rotation simple */
-    animation: spin 2s infinite linear;
+#login-container input, #login-container button {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
 }
 
-h1 {
-    margin-top: 20px;
-    color: #333;
+#login-container button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
 
-/* Keyframes pour l'animation de rotation */
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-
-/* Keyframes pour l'animation de disparition (fondu) */
-@keyframes fadeout {
-    from { opacity: 1; }
-    to { opacity: 0; }
-}
-
-.fade-out-effect {
-    animation: fadeout 0.5s forwards;
-}
-
-/* Styles du contenu principal (pour l'exemple) */
+/* Conservez les styles pour #main-content */
 #main-content {
     padding: 20px;
 }
